@@ -454,7 +454,7 @@ class User {
 
   static async updateById(id, { login, picture, password, email, role }) {
     const sql = `
-        UPDATE project_db.users 
+        UPDATE DB-lab-IO-26.users 
         SET 
           Login = ?,
           Picture = ?,
@@ -490,7 +490,7 @@ class User {
 
   static async create({ login, picture, password, email, role }) {
     const sql = `
-        INSERT INTO project_db.users (login, picture, password, email, role)
+        INSERT INTO DB-lab-IO-26.users (login, picture, password, email, role)
         VALUES (?, ?, ?, ?, ?);
         `;
     let connection;
@@ -517,9 +517,9 @@ class User {
 
   static async deleteById(id) {
     const user = await User.getById(id);
-    const deleteProjectsMembersSql = `DELETE FROM project_db.projects_members WHERE MemberId = ${id}`;
-    const deleteMembersSql = `DELETE FROM project_db.members WHERE UserId = ${id}`;
-    const deleteUsersSql = `DELETE FROM project_db.users WHERE id = ${id}`;
+    const deleteProjectsMembersSql = `DELETE FROM DB-lab-IO-26.projects_members WHERE MemberId = ${id}`;
+    const deleteMembersSql = `DELETE FROM DB-lab-IO-26.members WHERE UserId = ${id}`;
+    const deleteUsersSql = `DELETE FROM DB-lab-IO-26.users WHERE id = ${id}`;
 
     let connection;
 
