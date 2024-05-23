@@ -9,7 +9,7 @@ footer: "ECL 2.0 Licensed | Copyright © 2024 Yaroslav Okroshko"
 
 **Виконав:** 
 
-*студент 2-го курсу, групи ІО-26* 
+*студентка 2-го курсу, групи ІО-26* 
 
 - <span padding-right:5em></span> **Ксенія Гриценко** <a href="https://t.me/Bull1001" target="_blank"> Telegram </a>  
 
